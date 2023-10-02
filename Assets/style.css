@@ -1,0 +1,242 @@
+:root {
+    background-color: #E8E6DF;
+}
+
+header {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+    color: #ffffff
+}
+
+header h1 {
+    display: flex;
+    flex-grow: 1;
+    order: 2;
+    flex-basis: 150px;
+    font-size: 50px;
+    color: #ffffff;
+    align-content: flex-end;
+    margin-top: 80px;
+}
+
+.logo {
+    min-height: 150px;
+    min-width: 150px;
+    order: 1;
+    background-image: url(../Assets/images/Hansen_LogoFinal.png);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    order: 3;
+    flex-grow: 2;
+    float: right;
+    justify-content: flex-end;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.nav ul li {
+    margin-left: 30px;
+    margin: 10px 10px;
+}
+
+.nav ul li a {
+    font-size: 30px;
+    color: #ffffff;
+    padding: 10px 10px;
+}
+
+.nav ul li a:hover {
+    background-color: gold;
+    color: black;
+}
+
+.content {
+    display: inline-block;
+    margin-left: 5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about-section {
+    display: flex;
+    overflow: auto;
+    margin: 20px 30px;
+    padding: 15px;
+    height: 400px;
+    color: black;
+    padding: 20px 20px;
+    background-color: #ffffff;
+}
+
+.about-section h2 {
+    flex-basis: auto;
+    font-size: 30px;
+    font-style: italic;
+    border-right: black solid 5px;
+    margin: 15px 30px;
+    float: left;
+    padding: 5% 30px;
+}
+
+.about-section img {
+    flex-basis: auto;
+    max-height: 300px;
+    max-width: 250px;
+    margin: 15px 45px 15px 30px;
+    border: black solid 1px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale();
+}
+
+.about-section img:hover {
+    -webkit-filter: none;
+    filter: none();
+    box-shadow: inset 0px 0px 8px rgba(250, 222, 37, 1), 0 0 15px rgba(250, 222, 37, 1);
+}
+
+.about-section p {
+    flex-basis: auto;
+    font-size: 18px;
+    margin-top: 85px;
+}
+
+.work-section {
+    display: flex;
+    position: relative;
+    margin: 20px 30px;
+    padding: 15px;
+    height: 400px;
+    color: black;
+    background-color: #ffffff;
+}
+
+.work-section h2 {
+    flex-basis: auto;
+    font-size: 30px;
+    font-style: italic;
+    border-right: black solid 5px;
+    margin: 15px 30px;
+    float: left;
+    padding: 5% 30px;
+}
+
+.card {
+    transition: all 0.5s ease;
+}
+
+#horiseon {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    float: left;
+    margin: 45px 45px;
+    border: black solid 3px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale();
+}
+
+#horiseon:hover {
+    -webkit-filter: none;
+    filter: none();
+    box-shadow: inset 0px 0px 8px rgba(250, 222, 37, 1), 0 0 15px rgba(250, 222, 37, 1);
+}
+
+.work-section h3 {
+    position: absolute;
+    margin: 230px 5px 1px 140px;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    color: #ffffff;
+    background-color: gold;
+}
+
+.work-section img:hover {
+    -webkit-filter: none;
+    filter: none();
+    box-shadow: inset 0px 0px 8px rgba(250, 222, 37, 1), 0 0 15px rgba(250, 222, 37, 1);
+}
+
+
+.cards {
+    margin-left: 30px;
+}
+
+.card-column {
+    display: inline-block;
+}
+
+
+.card-column img {
+    display: flex;
+    flex-flow: row wrap;
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    margin: 4px;
+    border: black solid 2px;
+}
+
+.card-column h3 {
+    position: absolute;
+    margin: 100px 5px 200px 45px;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    color: #ffffff;
+    background-color: gold;
+}
+
+.contact-section {
+    margin: 20px 30px;
+    padding: 15px;
+    height: 400px;
+    color: black;
+    background-color: #ffffff;
+}
+
+.contact-section h2 {
+    flex-basis: auto;
+    font-size: 30px;
+    font-style: italic;
+    border-right: black solid 5px;
+    margin: 15px 30px;
+    float: left;
+    padding: 10% 30px;
+}
+
+#contact-info {
+    font-size: 22px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    margin: 5%;
+}
+
+#contact-info li {
+    margin: 15px;
+}
+
+#contact-info li a {
+    color: black;
+}
+
+#contact-info li a:hover {
+    font-style: italic;
+}
+
